@@ -186,8 +186,7 @@ fn main() {
 
         write!(
             stdout,
-            "{clear}{terminal_commands}{reset}",
-            clear = termion::clear::AfterCursor,
+            "{terminal_commands}{reset}",
             reset = termion::color::Bg(termion::color::Black),
         )
         .unwrap();
